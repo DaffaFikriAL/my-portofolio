@@ -1,0 +1,221 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* End Font */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+a, ul {
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/* End CSS Reset */
+
+
+/* CSS Global Section */
+.section-tittle {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.section-tittle::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23%;
+    height: 3.8px;
+    border-radius: 20px;
+    background-color: #000;
+}
+/* End CSS Global Section */
+
+
+
+/* Section SPPD KIW */
+.sppdkiw__contents {
+    padding: 3% 5%;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.sppdkiw__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: #dbdcfd;
+    box-shadow: 3px 6px 4px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 25px 20%;
+}
+
+.login__form {
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.first__look {
+    width: 110%;
+    height: 90%;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.employees__menu,
+.tarif__menu, 
+.sppd__menu,
+.lodging__menu,
+.interval__menu {
+    width: 155%;
+    height: 80%;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.back__top {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(238, 238, 238);
+    box-shadow: 3px 6px 4px rgba(0, 0, 0, .2);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.back__top i {
+    display: flex;
+    text-align: center;
+    transform: rotate(-90deg);
+    color: black;
+    font-size: 1.4rem;
+}
+
+.back__top:hover {
+    background: #e2e2e2;
+}
+/* End Section SPPD KIW */
+
+
+
+
+
+
+
+
+/* Responsive (1024px) */
+@media (max-width: 1024px){
+    /* CSS Global Section Responsive */
+    .section-tittle {
+        font-size: 3.2rem;
+        text-align: center;
+        margin-bottom: 15px;
+        }
+    /* End CSS Global Section Responsive */
+
+    .sppdkiw__contents {
+        padding: 3% 4%;
+        width: 100%;
+    }
+
+    .login__form {
+        width: 55%;
+        height: auto;
+    }
+    
+    .first__look {
+        width: 145%;
+        height: 80%;
+        margin-top: 40px;
+    }
+
+    .employees__menu,
+    .tarif__menu, 
+    .sppd__menu,
+    .lodging__menu,
+    .interval__menu {
+        width: 160%;
+        height: 80%;
+        margin-top: 40px;
+    }
+
+    .back__top {
+        bottom: 20px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 7px;
+    }
+
+    .back__top i {
+        font-size: .5rem;
+    }
+}
+/* End Responsive (1024px) */
+
+
+
+
+
+
+
+
+/* Responsive (768px) */
+@media (max-width: 768px){
+    /* CSS Global Section Responsive */
+    .section-tittle {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-bottom: 15px;
+        }
+    /* End CSS Global Section Responsive */
+
+        .sppdkiw__contents {
+            padding: 3% 6%;
+            width: 100%;
+        }
+
+        .login__form {
+            width: 45%;
+            height: auto;
+        }
+        
+        .first__look {
+            width: 140%;
+            height: 80%;
+            margin-top: 15px;
+        }
+
+        .employees__menu,
+        .tarif__menu, 
+        .sppd__menu,
+        .lodging__menu,
+        .interval__menu {
+            width: 155%;
+            height: 90%;
+            margin-top: 15px;
+        }
+
+        .back__top {
+            display: none;
+        }
+}
+/* End Responsive (768px) */
